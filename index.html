@@ -6,114 +6,96 @@
 <link rel="shotcut icon" href ="https://img2.freepng.ru/20180612/uzt/kisspng-restaurant-computer-icons-food-menu-issues-5b2087e8297cd0.5561046515288586001699.jpg"/>
 <style>
    body { background: url(https://restopr.ru/wp-content/uploads/2015/02/restaurant_marketing-1000x529.jpg); }
-#wrapper{ /* Оболочка страницы сайта */
-  width: 900px; /* Меняется ширина страницы */
+#wrapper{ 
+  width: 900px; 
   margin: 0 auto;
-  background:#f2e8c9; /* Меняется задний фон страницы */
+  background:#f2e8c9; 
 }
-
-/* Шапка сайта */
-
 #header{
-position:relative; /* Задаём блоку относительное позиционирование для того, чтобы затем размещать, в нём другие элементы и позиционировать относительно его границ поверх фоновой картинки и заголовка */
-  height: 100px; /* Высота шапки */
-  background-color: #ffffff; /* Фон шапки */
-   margin-bottom: 5px; /* Нижний отступ шапки от остального контента */
-  border-radius: 5px; /* Закругляются углы блока */
-  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; /* Тень. Визуально приподнимает блок над оболочкой */
+position:relative; 
+  height: 100px; 
+  background-color: #ffffff; 
+   margin-bottom: 5px; 
+  border-radius: 5px; 
+  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; 
 }
-img{ /* Фоновая картинка в шапке */
-float: left; /* Разрешаем наплывание других элементов на картинку */
-  margin: -40px 0 0 0;} /* Размещаем картинку в блоке header. 1-я и 3-я цифры - двигаем вверх-вниз, 2-я и 4-я цифры - двигаем вправо-влево */
-h1{ /* Заголовок сайта */
-  margin:0 0 10px 40px; /* Заголовок двигается верх-вправо-вниз-влево. */
-  color:#464451; /* Цвет заголовка */
+img{ 
+float: left; 
+  margin: -40px 0 0 0;} 
+h1{ 
+  margin:0 0 10px 40px; 
+  color:#464451; 
 }
-.nomer{ /*Подзаголовок (номер телефона)*/
-  position:absolute; /* Позиционируем абсолютно подзаголовок, относительно границ блока header. Также можно разместить в шапке сайта ещё другие картинки и абзацы поверх фоновой картинки и заголовка */
-  top:5px; /* Двигается вверх-вниз */
-  left:680px; /* Двигается вправо-влево */
-  font-size: 25px; /* Размер букв подзаголовка */
-  font-style:italic; /* Курсив */
-  font-weight:bold; /* Жирный */
-  color:#464451; /* Цвет букв подзаголовка */
+.nomer{ 
+  position:absolute; 
+  top:5px; 
+  left:680px; 
+  font-size: 25px; 
+  font-style:italic; 
+  font-weight:bold; 
+  color:#464451; 
 }
-
-/* Сайдбар (колонка справа) */
-
-#sidebar{ /* Блок сайдбара */
-  background-color: #ffffff; /* Фон блока */
-  width: 180px; /* Ширина блока */
-  padding: 10px; /* Отступ текста от краёв */
-  float: right; /* Размещаем блок справа от других элементов, наплывание или обтекание справа). Если делать сайдбар слева, то значение right меняем на left */
-  border-radius: 5px; /* Закругляем углы блока */
-  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; /* Задаём блоку тень */
+#sidebar{ 
+  background-color: #ffffff; 
+  width: 180px; 
+  padding: 10px;
+  float: right; 
+  border-radius: 5px; 
+  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; 
 }
-.marcer{ /* Галочки маркеры меню */
-  float: left; /* Размещаем слева от текста */
-  margin: 5px 5px 0 0; /* Двигаются вверх-вправо-вниз-влево */
+.marcer{ 
+  float: left; 
+  margin: 5px 5px 0 0; 
 }
 
-/* Контент (статья) */
-
-#content{ /* Блок контента */
-  margin-bottom: 5px; /* Отступ блока статьи от блока подвала */
-  width: 676px; /* Ширина статьи */
-  padding: 10px; /* Отступ текста от краёв блока */
-  background: #ffffff; /* Фон статьи */
+#content{ 
+  margin-bottom: 5px; 
+  width: 676px; 
+  padding: 10px; 
+  background: #ffffff; 
   border-radius: 5px;
   box-shadow: rgba(0,0,0,0.5) 0px 1px 3px;
 }
-.left{ /* Картинка в тексте слева */
+.left{ 
   float: left;
   margin: 30px 7px 7px 7px;
 }
-.right{ /* Картинка в тексте справа */
+.right{
   float: right;
   margin: 7px 0 7px 7px;
 }
-/* Подвал */
-
-#footer{ /* Блок подвала */
-  height:80px; /* Высота блока подвала */
-  background-color: #ffffff; /* Фон блока подвала */
-  margin-bottom: 10px; /* Отступ снизу */
-  border-radius: 5px; /* Закруглённые углы */
-  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; /* Тень блока */
+#footer{ 
+  height:80px; /
+  background-color: #ffffff; 
+  margin-bottom: 10px; 
+  border-radius: 5px; 
+  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; 
 }
-.clear{ /* Запрет наплывания. Устанавливается для того, чтобы блок контента, при заполнении текстом и изображениями не наплывал на подвал */
+.clear{ 
   clear: both;
 }
-  .fon{ /* Номер телефона */
-  float:left; /* Разрешаем другим элементам обтекать абзац справа */
+  .fon{ 
+  float:left; 
   margin:20px 0 0 20px;
 }
-.fax{ /* Номер факса */
+.fax{
   float:left;
   margin:20px 0 0 60px;
 }
-.mail{ /* Адрес E-mail */
+.mail{
   float:left;
  margin:20px 0 0 60px;
 }
 </style>
 </head>
 <body>
-  <div id="wrapper"> <!--Оболочка страницы-->
-<!--Шапка сайта-->
+  <div id="wrapper"> 
     <div id="header">
-<!--Заголовок сайта-->
       <h1>ВКУС ВОСТОКА</h1>
-<!--Описание (телефон)-->
         <p class="nomer"> +7(700)000-00-00</p>
-<!--Фоновая картинка в шапке сайта-->
-      
     </div>
-<!--Сайдбар-->
     <div id="sidebar">
-<!--меню-->
       <h3>О ресторане</h3>
-<!--Картинки маркеров меню (галочки)-->
         <p> Ресторан Вкус Востока сделан в виде
             традиционной помещичьей усадьбы. 
             Дубовые столы, охотничьи трофеи на бревенчатых 
@@ -126,32 +108,17 @@ h1{ /* Заголовок сайта */
         <p><h3>Часы работы</h3></p>
       <p>Понедельник — воскресенье</p>
       <p>С 10:00 до 00:00</p>
-
     </div>
-<!--Основной контент (статья)-->
     <div id="content">
-<!--Картинка слева-->
- 
-<!--Заголовок статьи-->
         <h3>МЕНЮ</h3>
-<!--Текст статьи-->
 <p>Десерты Classic Лаймовый мусс > 650тг</p>
         <p>Фирменные эклеры ресторана Erarta > 700тг</p>
         <p>Пять эклеров с разной начинкой в специальной подарочной упаковке > 1550тг</p>
-        
         <p>Фирменные мини-капкейки ресторана Erarta по мотивам книги «Долина Красок» > 1000тг</p>
-
-
         <p>Шесть мини-капкейков с разной начинкой в специальной подарочной упаковке > 2500тг</p>
-
 <p>Шоколадный десерт с миндалем > 1350тг</p>
-<p> <img class="right" src="https://photos-mt.kcdn.kz/webp/19/191c3b2d-3893-4e06-a9f1-d5bc7e7372ec/1-760x450.jpg"></p>
 <p>Домашнее мороженое и сорбеты в ассортименте > 650тг</p>
-
-      
-<!--Запрет наплывания-->
   <div class="clear"></div>
-<!--Подвал-->
     <div id="footer">
       <p class="fon"><strong>Телефон:<br> +7(700)000-00-00</strong> </p>
       <p class="fax"><strong>Факс:<br> 265-85-97</strong></p>
