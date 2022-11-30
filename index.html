@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="ru-ru">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-
-		<title>Вкус Востока</title>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<title>Вкус Востока</title>
 <link rel="shotcut icon" href ="https://img2.freepng.ru/20180612/uzt/kisspng-restaurant-computer-icons-food-menu-issues-5b2087e8297cd0.5561046515288586001699.jpg"/>
 <style>
    body { background: url(https://i.ytimg.com/vi/wW3tplmhGTE/maxresdefault.jpg); }
 #wrapper{ 
   width: 900px; 
   margin: 0 auto;
-	@@ -14,7 +14,7 @@
+  background:#f2e8c9; 
+}
 #header{
 position:relative; 
   height: 100px; 
@@ -18,7 +18,9 @@ position:relative;
    margin-bottom: 5px; 
   border-radius: 5px; 
   box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; 
-	@@ -24,7 +24,7 @@
+}
+img{ 
+float: left; 
   margin: -40px 0 0 0;} 
 h1{ 
   margin:0 0 10px 40px; 
@@ -26,7 +28,8 @@ h1{
 }
 .nomer{ 
   position:absolute; 
-	@@ -33,10 +33,10 @@
+  top:5px; 
+  left:680px; 
   font-size: 25px; 
   font-style:italic; 
   font-weight:bold; 
@@ -37,7 +40,14 @@ h1{
   width: 180px; 
   padding: 10px;
   float: right; 
-	@@ -52,7 +52,7 @@
+  border-radius: 5px; 
+  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; 
+}
+.marcer{ 
+  float: left; 
+  margin: 5px 5px 0 0; 
+}
+#content{ 
   margin-bottom: 5px; 
   width: 676px; 
   padding: 10px; 
@@ -45,7 +55,13 @@ h1{
   border-radius: 5px;
   box-shadow: rgba(0,0,0,0.5) 0px 1px 3px;
 }
-	@@ -66,7 +66,7 @@
+.left{ 
+  float: left;
+  margin: 30px 7px 7px 7px;
+}
+.right{
+  float: right;
+  margin: 7px 0 7px 7px;
 }
 #footer{ 
   height:80px; /
@@ -53,7 +69,25 @@ h1{
   margin-bottom: 10px; 
   border-radius: 5px; 
   box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; 
-	@@ -92,10 +92,10 @@
+}
+.clear{ 
+  clear: both;
+}
+  .fon{ 
+  float:left; 
+  margin:20px 0 0 20px;
+}
+.fax{
+  float:left;
+  margin:20px 0 0 60px;
+}
+.mail{
+  float:left;
+ margin:20px 0 0 60px;
+}
+</style>
+</head>
+<body>
   <div id="wrapper"> 
     <div id="header">
       <h1>ВКУС ВОСТОКА</h1>
@@ -64,7 +98,16 @@ h1{
         <p> Ресторан Вкус Востока сделан в виде
             традиционной помещичьей усадьбы. 
             Дубовые столы, охотничьи трофеи на бревенчатых 
-	@@ -112,17 +112,17 @@ <h3>О ресторане</h3>
+            стенах, русская печь и живая музыка отлично передаёт
+            очарование светлых традиций старинного трактира.
+            Вы на несколько часов почувствуете себя дворянином.
+            Звоните и бронируйте столик уже сегодня – иногда свободных 
+            мест не хватает.</p>
+       <hr width="50" color="	#000000" size="3">
+        <p><h3>Часы работы</h3></p>
+      <p>Понедельник — воскресенье</p>
+      <p>С 10:00 до 00:00</p>
+    </div>
     <div id="content">
         <h1>МЕНЮ</h1>
        <ul>
@@ -81,21 +124,7 @@ h1{
       <p class="fon"><strong>Телефон:<br> +7(705)794-12-43</strong> </p>
       <p class="fax"><strong>Факс:<br> 265-85-97</strong></p>
       <p class="mail"><strong>E-mail<br>info.bkus.bostoka@mail.ru</strong></p>
-
-
-	
-
-
-		
-
-		
-
-						
-		<script type="text/javascript" src="/js/mask.min.js" defer></script>
-		<script type="text/javascript" src="/js/lazyload.min.js"></script>
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" defer></script>
-
-		
-						<script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?load=package.standard&lang=ru-RU" defer></script>
-	</body>
+    </div>
+  </div>
+</body>
 </html>
