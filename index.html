@@ -11,5 +11,25 @@
         <input type="submit" value="Отправить">
     </form>
 </body>
+    
+    from flask import Flask, render_template, request
+
+app = Flask(__name__)
+
+# Определяем корневой маршрут
+@app.route('/', methods=['GET', 'POST'])
+def home():
+    if request.method == 'POST':
+        # Получаем данные из формы
+        agenda = request.form.get('agenda')
+        # Сохраняем данные в файл
+        with open('agenda.txt', 'w') as f:
+            f.write(agenda)
+
+    return render_template('index.html')
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
 </html>
 
