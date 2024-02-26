@@ -1,33 +1,130 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-    <title>Автоматизация заседаний кафедры</title>
+<meta charset="utf-8" />
+<title>Вкус Востока</title>
+<link rel="shotcut icon" href ="https://img2.freepng.ru/20180612/uzt/kisspng-restaurant-computer-icons-food-menu-issues-5b2087e8297cd0.5561046515288586001699.jpg"/>
+<style>
+   body { background: url(https://i.ytimg.com/vi/wW3tplmhGTE/maxresdefault.jpg); }
+#wrapper{ 
+  width: 900px; 
+  margin: 0 auto;
+  background:#f2e8c9; 
+}
+#header{
+position:relative; 
+  height: 100px; 
+  background-color: #800000; 
+   margin-bottom: 5px; 
+  border-radius: 5px; 
+  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; 
+}
+img{ 
+float: left; 
+  margin: -40px 0 0 0;} 
+h1{ 
+  margin:0 0 10px 40px; 
+  color:#FFFF00; 
+}
+.nomer{ 
+  position:absolute; 
+  top:5px; 
+  left:680px; 
+  font-size: 25px; 
+  font-style:italic; 
+  font-weight:bold; 
+  color:#FFFF00; 
+}
+#sidebar{ 
+  background-color: #800000; 
+  width: 180px; 
+  padding: 10px;
+  float: right; 
+  border-radius: 5px; 
+  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; 
+}
+.marcer{ 
+  float: left; 
+  margin: 5px 5px 0 0; 
+}
+#content{ 
+  margin-bottom: 5px; 
+  width: 676px; 
+  padding: 10px; 
+  background: #800000; 
+  border-radius: 5px;
+  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px;
+}
+.left{ 
+  float: left;
+  margin: 30px 7px 7px 7px;
+}
+.right{
+  float: right;
+  margin: 7px 0 7px 7px;
+}
+#footer{ 
+  height:80px; /
+  background-color: #800000; 
+  margin-bottom: 10px; 
+  border-radius: 5px; 
+  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; 
+}
+.clear{ 
+  clear: both;
+}
+  .fon{ 
+  float:left; 
+  margin:20px 0 0 20px;
+}
+.fax{
+  float:left;
+  margin:20px 0 0 60px;
+}
+.mail{
+  float:left;
+ margin:20px 0 0 60px;
+}
+</style>
 </head>
 <body>
-    <h1>Повестка дня для заседания кафедры</h1>
-    <form action="/" method="post">
-        <label for="agenda">Введите повестку дня:</label><br>
-        <textarea id="agenda" name="agenda" rows="10" cols="50"></textarea><br><br>
-        <input type="submit" value="Отправить">
-    </form>
+  <div id="wrapper"> 
+    <div id="header">
+      <h1>ВКУС ВОСТОКА</h1>
+        <p class="nomer"> +7(705)794-12-43</p>
+    </div>
+    <div id="sidebar">
+      <h2>О ресторане</h2>
+        <p> Ресторан Вкус Востока сделан в виде
+            традиционной помещичьей усадьбы. 
+            Дубовые столы, охотничьи трофеи на бревенчатых 
+            стенах, русская печь и живая музыка отлично передаёт
+            очарование светлых традиций старинного трактира.
+            Вы на несколько часов почувствуете себя дворянином.
+            Звоните и бронируйте столик уже сегодня – иногда свободных 
+            мест не хватает.</p>
+       <hr width="50" color="	#000000" size="3">
+        <p><h3>Часы работы</h3></p>
+      <p>Понедельник — воскресенье</p>
+      <p>С 10:00 до 00:00</p>
+    </div>
+    <div id="content">
+        <h1>МЕНЮ</h1>
+       <ul>
+<p><li><h2>Десерты Classic Лаймовый мусс > 650тг </h2></li></p>
+          <p><li><h2>Фирменные эклеры ресторана Erarta > 700тг</h2></li></p>
+   <p><li><h2>Пять эклеров с разной начинкой в специальной подарочной упаковке > 1550тг</h2></li></p>
+    <p><li><h2>Фирменные мини-капкейки ресторана Erarta по мотивам книги «Долина Красок» > 1000тг</h2></li></p>
+        <p><li><h2>Шесть мини-капкейков с разной начинкой в специальной подарочной упаковке > 2500тг</h2></li></p>
+<p><li><h2>Шоколадный десерт с миндалем > 1350тг</h2></li></p>
+<p><li><h2>Домашнее мороженое и сорбеты в ассортименте > 650тг</h2></li></p>
+</ul>
+  <div class="clear"></div>
+    <div id="footer">
+      <p class="fon"><strong>Телефон:<br> +7(705)794-12-43</strong> </p>
+      <p class="fax"><strong>Факс:<br> 265-85-97</strong></p>
+      <p class="mail"><strong>E-mail<br>info.bkus.bostoka@mail.ru</strong></p>
+    </div>
+  </div>
 </body>
 </html>
-from flask import Flask, render_template, request
-
-app = Flask(__name__)
-
-# Определяем корневой маршрут
-@app.route('/', methods=['GET', 'POST'])
-def home():
-    if request.method == 'POST':
-        # Получаем данные из формы
-        agenda = request.form.get('agenda')
-        # Сохраняем данные в файл
-        with open('agenda.txt', 'w') as f:
-            f.write(agenda)
-
-    return render_template('index.html')
-
-if __name__ == '__main__':
-    app.run(debug=True)
-
